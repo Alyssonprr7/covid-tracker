@@ -1,0 +1,32 @@
+.container{
+    display:flex;
+    justify-content: center;
+    width: 85%;
+}
+
+.rotate{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.icon{
+    width: 10%;
+    height: 10%;
+}
+
+
+@media(max-width:770px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width:770px) and (orientation:portrait) {
+    .icon{
+        width: 10%;
+        height: 10%;
+        margin-right: 3%;
+    }
+    .rotate{opacity: 1;}
+
+}
