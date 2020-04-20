@@ -13,13 +13,13 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
             <Grid container spacing={3} justify="space-around">
                 <Grid item component={Card} xs={12} md={2}  className={cx(styles.card, styles.infected)}>
                     <CardContent>
-                        <Typography color="textSecondary" gutterBottom>Infectados</Typography>
+                        <Typography color="textSecondary" gutterBottom>Confirmados</Typography>
                         <Typography variant = "h5">
                             <CountUp start= {0} end={confirmed.value} duration={1.5} separator=","  //Separador dos valores
                             />
                         </Typography>
                         <Typography color="textSecondary"> {new Date(lastUpdate).toLocaleDateString()}</Typography>
-                        <Typography variant='body2'> Casos ativos de COVID-19</Typography>
+                        <Typography variant='body2'> Casos confirmados de COVID-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card}  xs={12} md={2} className={cx(styles.card, styles.recovered)}>

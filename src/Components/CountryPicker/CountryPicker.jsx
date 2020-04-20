@@ -7,6 +7,7 @@ const CountryPicker = ({handleCountryChange}) => {
     
     const [fetchedCountries, setFetchedCountries] = useState([])
 
+
     useEffect(()=> {
         const fetchAPI = async () => {
             setFetchedCountries(await fetchCountries())
